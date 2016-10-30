@@ -1,0 +1,210 @@
+body
+{
+   margin:0;
+   padding:0; 
+}
+ul,li{
+   list-style:none;
+}
+a{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+#header{
+   width: 100%;
+   height:190px;
+   background-color: #005da5;
+}
+#header .nav{
+   margin: auto;
+   width: 100%;
+   height:40px;
+   background-color: #e8e8e8;	
+}/*上部分小导航*/
+
+#header .nav .navContent{
+   margin: auto;
+   width: 980px;
+}
+#header .nav .navContent ul li{
+	float:left;
+	line-height: 40px;
+  margin-right:8px;
+	border-right: 1px solid #c8c5c5;
+}
+#header .nav .navContent ul li:hover a{
+  color:red;
+}
+#header .nav .navContent ul  li:last-child{
+  border-right: none;
+  }/*去除最后一个li的右边框*/
+
+#header .nav .navContent ul li a{
+  font-family: 微软雅黑;
+  font-size: 14px;
+  margin-right: 8px;
+}
+#header .nav .search{
+	float:right;
+	margin-top: 8px;
+    width: 178px;
+    height: 24px;
+    background: url("../images/search.png");
+}
+#header .nav .search input{
+	margin-left: 6px;
+	margin-top: 2px;
+    width: 140px;
+    height: 19px;
+    border: none;
+    outline: none;
+}
+#header .nav .search button{
+    float: right;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: none;
+}
+#header .logo{
+   margin: auto;
+   width: 980px;
+   height:150px;
+}
+#header .logo .logoPic{
+  width:260px;
+  float:left;
+  position:absolute;
+}
+#header .logo .logoPic img{
+  float:left;
+  margin-top: 22px;
+}
+#header .logo .mba {
+  float:left;
+  position:relative;
+  margin-top: 28px;
+  margin-left: 240px;
+  padding-left: 14px;
+  font-size: 30px;
+  font-weight:bold;
+  font-family: 微软雅黑;
+  color: #fff;
+  border-left: 1px solid #fff;
+
+}
+#header .logoNav{
+  float:right;
+  display:inline-block;
+  margin-top:46px;
+  height:40px;
+}
+#header .logoNav>li{
+  position: relative;
+  float:left;
+  padding:0 9px;
+  height:34px;
+  color:#fff;
+  text-align:center;
+  font-size:16px;
+  cursor:pointer;
+  z-index:9999;/*让列表浮在最表面，不然会被下面的图片覆盖*/
+}
+#header .logoNav li a{
+  color:#fff;
+  font-family: 微软雅黑;
+}
+#header .logoNav li.active{
+  border-bottom:4px solid #fff;
+}
+#header .logoNav li:hover{
+  background-color: #fff;
+}
+#header .logoNav li:hover a{
+  color:#005da5;
+  font-family: 微软雅黑;
+}/*鼠标移入时，字体颜色和背景颜色发生改变*/
+#header .logoNav li ul.menu{
+  display:none;
+  position: absolute;
+  width:150px;
+  margin-left: -9px;
+  padding-left: 8px;
+  background-color: #fff;
+  box-shadow:4px 4px 4px #444;
+}
+#header .logoNav li:hover .menu{
+  display:block;
+}
+#header .logoNav li .menu li a{
+  display:block;
+  color:#000;
+  font-size:14px;
+  height:30px;
+  text-align: left;
+  padding-left:20px;
+
+}
+#header .logoNav li .menu li:hover a{
+  color:red;
+  background-color: #e8e8e8;
+}
+#header .logoNav li .menu li{
+border-bottom:1px solid #e8e8e8;
+}
+#header .logoNav li .menu li:last-child{
+  border-bottom:none;
+}
+#header .carrousel-main{
+  position: relative;
+   margin: auto;
+   top:-30px;
+  width:1000px;
+  height:400px;
+}
+#header .carrousel-main .carrousel-list{
+  width:inherit;
+  height:inherit;
+}
+#header .carrousel-main .carrousel-list a{
+  display: block;
+  width:inherit;
+  height:inherit;
+}
+#header .carrousel-main .carrousel-list a img{
+  display: block;
+  width:inherit;
+  height:inherit;
+  border:4px solid #fff;
+  }
+ #header.carrousel-btn{
+  position: absolute;
+  top:0px;
+  width:100px;
+  height:400px;
+  cursor: pointer;
+  opacity: 0.5;
+  opacity:0.5;
+  z-index: 10;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/*左右按钮*/
+#header .carrousel-btn-pre{
+  left:0px;
+  background-image: url('images/btn_l.png');
+}
+#header .carrousel-btn-next{
+  right:0px;
+  background-image: url('images/btn_r.png');
+}
+/*列表*/
+#header .carrousel-main .carrousel-list .carrousel-item{
+  position: absolute;
+  top:0px;
+  left: 0px;
+}
+
+
